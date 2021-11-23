@@ -20,4 +20,23 @@ public class LinioPage extends PageObject {
     @FindBy(xpath = "/html/body/div[3]/main/div[1]/div[3]/p[1]")
     public WebElementFacade lblResultados;
 
+    @FindBy(xpath = "//*[@id=\"catalogue-product-container\"]/div[1]/a[1]/div[1]/figure/picture/img")
+    public WebElementFacade imgPrimerElemento;
+
+    @FindBy(id = "buy-now")
+    public WebElementFacade btnAgregarCarrito;
+
+    @FindBy(id = "added-product-quantity")
+    public WebElementFacade lblCantidad;
+
+    @FindBy(xpath = "//*[@id=\"alert-add-to-cart\"]/div/div/div[1]/div/h2[1]")
+    public WebElementFacade lblMensajeProductoAgregado;
+
+    @FindBy(xpath = "//*[@id=\"alert-add-to-cart\"]/div/div/div[4]/a")
+    public WebElementFacade btnIrAlCarrito;
+
+    @FindBy(xpath = "/html/body/div[4]/main/div[1]/div/div[2]/div/ul/li[1]/p")
+    public WebElementFacade lblSubtotal;
+
+
 }

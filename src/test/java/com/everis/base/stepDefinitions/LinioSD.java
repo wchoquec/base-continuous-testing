@@ -32,4 +32,27 @@ public class LinioSD {
         steps.verificarResultadosDeBusqueda();
     }
 
+    @And("selecciono primer elemento")
+    public void seleccionoPrimerElemento(){
+        steps.seleccionarPrimeroElemento();
+    }
+    @And("presiono boton Añadir al carrito")
+    public void presionoBotonAgregarAlCarrito(){
+        steps.presionarBotonAgregarCarrito();
+    }
+    @Then("verifico que se agregue {string} producto y el mensaje sea {string}")
+    public void verificoProductoAgregado(String cantidad, String mensaje){
+        steps.verificarProductoAgregado(cantidad, mensaje);
+    }
+
+    @And("presiono boton Ir al carrito")
+    public void presionoBotonIrAlCarrito(){
+        steps.presionarBotonIrAlCarrito();
+    }
+    @Then("verifico que el subtotal sea {string}")
+    public void verificarSubTotal(String var){
+        steps.verificarSubtotal(var);
+    }
+
+
 }

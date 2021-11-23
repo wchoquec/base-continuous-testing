@@ -1,4 +1,4 @@
-Feature: Feature de la pagina Linio
+Feature: Busqueda de productos en la pagina Linio
 
   @Linio1
   Scenario: Busqueda de producto en la pagina de Linio
